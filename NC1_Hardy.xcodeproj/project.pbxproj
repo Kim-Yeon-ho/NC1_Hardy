@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		106602662820AAD60060C1AB /* NC1_HardyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106602652820AAD60060C1AB /* NC1_HardyApp.swift */; };
-		106602682820AAD60060C1AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106602672820AAD60060C1AB /* ContentView.swift */; };
+		106602682820AAD60060C1AB /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106602672820AAD60060C1AB /* StartView.swift */; };
 		1066026A2820AAD90060C1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 106602692820AAD90060C1AB /* Assets.xcassets */; };
 		1066026D2820AAD90060C1AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1066026C2820AAD90060C1AB /* Preview Assets.xcassets */; };
 		106602772820AAD90060C1AB /* NC1_HardyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106602762820AAD90060C1AB /* NC1_HardyTests.swift */; };
 		106602812820AAD90060C1AB /* NC1_HardyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106602802820AAD90060C1AB /* NC1_HardyUITests.swift */; };
 		106602832820AAD90060C1AB /* NC1_HardyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106602822820AAD90060C1AB /* NC1_HardyUITestsLaunchTests.swift */; };
+		106602922820B71C0060C1AB /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106602912820B71C0060C1AB /* StartButtonView.swift */; };
+		106602972820C86D0060C1AB /* Page1_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106602962820C86D0060C1AB /* Page1_View.swift */; };
+		106602992820CAA50060C1AB /* Page2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106602982820CAA50060C1AB /* Page2_View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		106602622820AAD60060C1AB /* NC1_Hardy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NC1_Hardy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		106602652820AAD60060C1AB /* NC1_HardyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC1_HardyApp.swift; sourceTree = "<group>"; };
-		106602672820AAD60060C1AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		106602672820AAD60060C1AB /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		106602692820AAD90060C1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1066026C2820AAD90060C1AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		106602722820AAD90060C1AB /* NC1_HardyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NC1_HardyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		1066027C2820AAD90060C1AB /* NC1_HardyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NC1_HardyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		106602802820AAD90060C1AB /* NC1_HardyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC1_HardyUITests.swift; sourceTree = "<group>"; };
 		106602822820AAD90060C1AB /* NC1_HardyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC1_HardyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		106602912820B71C0060C1AB /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		106602962820C86D0060C1AB /* Page1_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1_View.swift; sourceTree = "<group>"; };
+		106602982820CAA50060C1AB /* Page2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2_View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				106602652820AAD60060C1AB /* NC1_HardyApp.swift */,
-				106602672820AAD60060C1AB /* ContentView.swift */,
-				106602692820AAD90060C1AB /* Assets.xcassets */,
+				106602942820BC9F0060C1AB /* Start Page */,
+				106602932820BC9B0060C1AB /* Quiz Page1 */,
+				106602952820BCA20060C1AB /* Quiz Page2 */,
 				1066026B2820AAD90060C1AB /* Preview Content */,
 			);
 			path = NC1_Hardy;
@@ -105,6 +112,7 @@
 		1066026B2820AAD90060C1AB /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				106602692820AAD90060C1AB /* Assets.xcassets */,
 				1066026C2820AAD90060C1AB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -125,6 +133,31 @@
 				106602822820AAD90060C1AB /* NC1_HardyUITestsLaunchTests.swift */,
 			);
 			path = NC1_HardyUITests;
+			sourceTree = "<group>";
+		};
+		106602932820BC9B0060C1AB /* Quiz Page1 */ = {
+			isa = PBXGroup;
+			children = (
+				106602962820C86D0060C1AB /* Page1_View.swift */,
+			);
+			path = "Quiz Page1";
+			sourceTree = "<group>";
+		};
+		106602942820BC9F0060C1AB /* Start Page */ = {
+			isa = PBXGroup;
+			children = (
+				106602672820AAD60060C1AB /* StartView.swift */,
+				106602912820B71C0060C1AB /* StartButtonView.swift */,
+			);
+			path = "Start Page";
+			sourceTree = "<group>";
+		};
+		106602952820BCA20060C1AB /* Quiz Page2 */ = {
+			isa = PBXGroup;
+			children = (
+				106602982820CAA50060C1AB /* Page2_View.swift */,
+			);
+			path = "Quiz Page2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				106602682820AAD60060C1AB /* ContentView.swift in Sources */,
+				106602992820CAA50060C1AB /* Page2_View.swift in Sources */,
+				106602682820AAD60060C1AB /* StartView.swift in Sources */,
 				106602662820AAD60060C1AB /* NC1_HardyApp.swift in Sources */,
+				106602922820B71C0060C1AB /* StartButtonView.swift in Sources */,
+				106602972820C86D0060C1AB /* Page1_View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
