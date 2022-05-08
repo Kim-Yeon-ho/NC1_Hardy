@@ -20,9 +20,9 @@ struct StartButtonView: View {
             
             switch randomPage {
             case 0:
-                Page1_View().navigationBarHidden(false)
+                Page1View().navigationBarHidden(false)
             default:
-                Page2_View()
+                Page2View()
             }
             
         } label: {

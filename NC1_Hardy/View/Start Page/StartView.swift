@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct StartView: View {
+    @AppStorage("_isFirstLaunching") var isFirstLauching : Bool = true
+    
     var body: some View {
         NavigationView{
             VStack{
                 Image("Title").resizable()
                     .frame(width: 300, height: 300)
-                
+                    .fullScreenCover(isPresented: $isFirstLauching) {
+                        OnboardingView(isFirstLaunching: $isFirstLauching)
+                    }
                 Spacer().frame(height:150)
                 StartButtonView()
                 Spacer().frame(height: 50)
-
             }
         }
     }
